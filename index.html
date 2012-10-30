@@ -1,137 +1,83 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Neige Freu - Rencontres Django Toulouse 2012 (Capitole du Libre)</title>
 
-    <meta name="author" content="Bruno Bord" />
+    <head>
+        <meta charset="utf-8">
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <title>Neige Freu</title>
 
-    <!--
+        <meta name="description" content="Neige FR: #neigefr -> neigefr.org ">
+        <meta name="author" content="Bruno Bord">
 
-        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-        presentation to work.
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
+        <link rel="stylesheet" href="css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
 
-    -->
-    <link href="css/neigefr.css" rel="stylesheet" />
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-</head>
+    <body>
 
-<body class="impress-not-supported">
+        <div class="reveal">
 
-<!--
-    For example this fallback message is only visible when there is `impress-not-supported` class on body.
--->
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+            <div class="slides">
 
-<!--
-
-    Now that's the core element used by impress.js.
-
-    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
-    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
-
-    You probably won't need it now, but there are some configuration options that can be set on this element.
-
-    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
-    a number of ms. It defaults to 1000 (1s).
-
-    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
-    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
-    If you are willing to change this value make sure you understand how CSS perspective works:
-    https://developer.mozilla.org/en/CSS/perspective
-
-    But as I said, you won't need it for now, so don't worry - there are some simple but interesing things
-    right around the corner of this tag ;)
-
--->
-<div id="impress">
-
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="5">
-        <h1>neigefr.org<sup>❄</sup></h1>
-    </div>
-
-    <div class="step" data-x="-3500" data-y="0" data-scale="1">
-        <q>#UKSNOW</q>
-    </div>
-
-    <div class="step" data-x="-3500" data-y="0" data-scale="1">
-        <object data="https://upload.wikimedia.org/wikipedia/commons/1/17/Union_flag_1606_%28Kings_Colors%29.svg"></object>
-    </div>
-
-    <div id="bayeux1" class="step" data-x="-38000" data-y="4900" data-scale="1">
-        <img src="http://www.hs-augsburg.de/~harsch/Chronologia/Lspost11/Bayeux/bay_tap1.jpg" alt="Bayeux">
-    </div>
-    <div id="bayeux2" class="step" data-x="-30000" data-y="4900" data-scale="1">
-        <img src="http://www.hs-augsburg.de/~harsch/Chronologia/Lspost11/Bayeux/bay_tap2.jpg" alt="Bayeux">
-    </div>
-    <div id="bayeux3" class="step" data-x="-21000" data-y="4900" data-scale="1">
-        <img src="http://www.hs-augsburg.de/~harsch/Chronologia/Lspost11/Bayeux/bay_tap3.jpg" alt="Bayeux">
-    </div>
-    <div id="bayeux4" class="step" data-x="-10000" data-y="4900" data-scale="1">
-        <img src="http://www.hs-augsburg.de/~harsch/Chronologia/Lspost11/Bayeux/bay_tap4.jpg" alt="Bayeux">
-    </div>
-
-    <div class="step" data-x="10000" data-y="4900" data-scale="1" data-transition-duration="60000">
-        <q>Et ils trichent au rugby en plus...</q>
-    </div>
-
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
+                <section>
+                    <h1>Neige Freu</h1>
+                    <img src="img/neige_en_tempete.jpg" alt="Neige en tempête">
+                    <p></p>
+                </section>
 
 
-</div>
+                <section>
+                    <h1>Colophon</h1>
+                    <h3>Images</h3>
+                    <p><a href="http://www.flickr.com/photos/deniscollette/6902126173/in/photostream/">"Neige en tempête"</a> : Par <a href="http://www.flickr.com/photos/deniscollette/">Denis Collette</a></p>
+                </section>
+            </div>
 
-<!--
+        </div>
 
-    Hint is not related to impress.js in any way.
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
 
-    But it can show you how to use impress.js features in creative way.
+        <script>
 
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
 
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
+                theme: 'sky', //Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: "zoom", //Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-    ...
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
 
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
+        </script>
 
-    Just sayin' ;)
-
--->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) {
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
-
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
-
-</body>
+    </body>
 </html>
