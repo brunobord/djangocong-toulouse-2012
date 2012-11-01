@@ -1,0 +1,7 @@
+.reveal .twitter-tweet-rendered blockquote:before {
+    content: none !important;
+}
+
+.reveal .twitter-tweet-rendered blockquote:after {
+    content: none !important;
+}

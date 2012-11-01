@@ -6,7 +6,7 @@
 
         <title>Neige Freu</title>
 
-        <meta name="description" content="Neige FR: #neigefr -> neigefr.org ">
+        <meta name="description" content="Neige FR: #neigefr -> neigefr.org">
         <meta name="author" content="Bruno Bord">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/reveal.css">
         <!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
         <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="css/neigefr.css">
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -96,6 +97,82 @@
                     <p>TODO: photo du gars qui pense....</p>
                 </section>
 
+                <section>
+                    <h1>Go-Go-Gadgeto Django</h1>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Mécanisme</h1>
+                        <h1>↓</h1>
+                    </section>
+                    <section>
+                        <h1>#neigefr</h1>
+                    </section>
+                    <section>
+                        <h1>crontab</h1>
+                    </section>
+                    <section>
+                        <h1>Twitter API Search</h1>
+                        <p><pre><code class="python">
+url = 'http://search.twitter.com/search.json?q=%23neigefr'
+                        </code></pre></p>
+                    </section>
+
+                    <section>
+                        <h1>Parsing</h1>
+                        <h2>message</h2>
+                        <p><code>
+LOL il neige #neigefr 75008 3/10 MDR
+                        </code></p>
+                    </section>
+
+                    <section>
+                        <h1>Parsing</h1>
+                        <h2>Code postal</h2>
+                        <p><code>
+LOL il neige #neigefr <strong>75008</strong> 3/10 MDR
+                        </code></p>
+                    </section>
+
+                    <section>
+                        <h1>Parsing</h1>
+                        <h2>(Intensité)</h2>
+                        <p><code>
+LOL il neige #neigefr 75008 <strong>3/10</strong> MDR
+                        </code></p>
+                    </section>
+
+                    <section>
+                        <h1>Code postal -> LatLong</h1>
+                        <pre><code class="python">
+url = 'http://maps.google.com/maps/geo?q="+zipcode+",France...'
+                        </code></pre>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h1>Rendu des cartes</h1>
+                    <h2>Google Maps</h2>
+                </section>
+
+                <section>
+                    <h1>Début du codage</h1>
+                    <h2>2 février 2012</h2>
+                </section>
+
+                <section data-state="alert">
+                    <h1>Presque</h1>
+                    <h2>3 février 2012</h2>
+                    <blockquote class="twitter-tweet tw-align-center" lang="fr"><p>bon. j'ai craqué : <a href="https://t.co/RXjIoXlf" title="https://github.com/brunobord/neigefr">github.com/brunobord/neig…</a> - pas encore prêt à l'emploi, mais j'y travaille</p>&mdash; Bruno Bord (@brunobord) <a href="https://twitter.com/brunobord/status/165547486419763200" data-datetime="2012-02-03T21:29:31+00:00">Février 3, 2012</a></blockquote>
+                </section>
+
+                <section data-state="soothe">
+                    <h1>Go !</h1>
+                    <h2>4 février 2012</h2>
+                    <blockquote class="twitter-tweet tw-align-center" lang="fr"><p>it's vivant! vivant! <a href="http://t.co/iuepfYXc" title="http://neigefr.org">neigefr.org</a> - <a href="https://twitter.com/search/%23neigefr">#neigefr</a></p>&mdash; Bruno Bord (@brunobord) <a href="https://twitter.com/brunobord/status/165587703734353921" data-datetime="2012-02-04T00:09:19+00:00">Février 4, 2012</a></blockquote>
+                </section>
 
                 <section>
                     <h1>Colophon</h1>
@@ -118,7 +195,7 @@
                 progress: true,
                 history: true,
 
-                theme: 'sky', //Reveal.getQueryHash().theme, // available themes are in /css/theme
+                //theme: 'beige', //Reveal.getQueryHash().theme, // available themes are in /css/theme
                 transition: "zoom", //Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
                 // Optional libraries used to extend on reveal.js
@@ -133,6 +210,7 @@
             });
 
         </script>
+        <script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </body>
 </html>
